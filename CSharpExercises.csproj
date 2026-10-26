@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Lab1\Matrix.cs" />
     <Compile Include="Lab2\OverloadExample.cs" />
+    <Compile Include="Lab3\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,6 +53,7 @@
     <None Include="App.config" />
     <None Include="Lab1\README.md" />
     <None Include="Lab2\README.md" />
+    <None Include="Lab3\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
