@@ -1,4 +1,5 @@
 ﻿using CSharpExercises.Lab1;
+using CSharpExercises.Lab2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace CSharpExercises
         static void Main(string[] args)
         {
             //Lab 1
-            int n, a, b;
+            /*int n, a, b;
             Console.Write("n = ");
             n = int.Parse(Console.ReadLine());
             Console.Write("a = ");
@@ -20,10 +21,27 @@ namespace CSharpExercises
             Console.Write("b = ");
             b = int.Parse(Console.ReadLine());
 
-
-
             Matrix m = new Matrix(n, a, b);
-            m.ShowMatrix();
+            m.ShowMatrix();*/
+
+            //Lab2
+            Console.Write("Write x = ");
+            string x = Console.ReadLine();
+            Console.Write("n = ");
+            int n = int.Parse(Console.ReadLine());
+
+            try
+            {
+                Console.WriteLine("int: " + OverloadExample.ToMultiplicate(int.Parse(x), n));
+            }
+            catch { }
+            try
+            {
+                Console.WriteLine("double: " + OverloadExample.ToMultiplicate(double.Parse(x), n));
+            }
+            catch { }
+
+            Console.WriteLine("string: " + OverloadExample.ToMultiplicate(x, n));
         }
     }
 }
